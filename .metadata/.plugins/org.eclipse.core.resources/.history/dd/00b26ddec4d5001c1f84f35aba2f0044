@@ -1,0 +1,7 @@
+package com.ict.domain;
+
+public class test {
+	private int a;
+	private Stirng b;
+	private double c;
+}
