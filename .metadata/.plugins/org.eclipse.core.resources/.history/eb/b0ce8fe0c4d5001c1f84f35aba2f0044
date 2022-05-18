@@ -1,7 +1,0 @@
-package com.ict.domain;
-
-public class test {
-	private int a;
-	private String b;
-	private double c;
-}
