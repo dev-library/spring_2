@@ -2,17 +2,33 @@ package com.ict.di;
 
 import com.ict.di.classfile.Singer;
 import com.ict.di.classfile.Stage;
+import com.ict.di.classfile.Broadcast;
+import com.ict.di.classfile.DanceSinger;
+import com.ict.di.classfile.HiphopSinger;
+import com.ict.di.classfile.Satellite;
 
 public class DIMainJavaver {
 
 	public static void main(String[] args) {
-		// Singer¸¦ »ı¼ºÇØ¼­ ³ë·¡ÇÏ°Ô ¸¸µé¾îº¸¼¼¿ä.
+		// Singerë¥¼ ìƒì„±í•´ì„œ ë…¸ë˜í•˜ê²Œ ë§Œë“¤ì–´ë³´ì„¸ìš”.
 		//Singer singer = new Singer();
 		//singer.sing();
-		// Stageµµ ¸¸µé¾î¼­ °ø¿¬À» ½ÃÄÑº¸¼¼¿ä.
+		//DanceSinger singer = new DanceSinger();
+		//singer.sing();
+		//HiphopSinger singer = new HiphopSinger();
+		//singer.sing();
+		
+		// Stageë„ ë§Œë“¤ì–´ì„œ ê³µì—°ì„ ì‹œì¼œë³´ì„¸ìš”.
 		//Stage stage = new Stage(singer);
 		//stage.perform();
 
+		// Broadcastë¥¼ ìƒì„±í•´ì„œ ë°©ì†¡ë¬´ëŒ€ë¥¼ ì†¡ì¶œí•´ë³´ê² ìŠµë‹ˆë‹¤.
+		//Broadcast broadcast = new Broadcast(stage);
+		//broadcast.broad();
+		
+		// ìœ„ì„±ë°©ì†¡ ì²˜ë¦¬ë¥¼ ìœ„í•œ ìœ„ì„± ìƒì„± ë° ì†¡ì¶œ
+		//Satellite satellite = new Satellite(broadcast);
+		//satellite.satelliteBroad();
 	}
 
 }

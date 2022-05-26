@@ -1,16 +1,37 @@
 package com.ict.di.classfile;
 
+import javax.annotation.Resource;
+import javax.inject.Inject;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Stage {
 	
-	private Singer singer;// ¹«´ë¿¡ ¼­´Â °¡¼ö
+	// ë¹ˆ ì»¨í…Œì´ë„ˆ ë‚´ë¶€ì—ì„œ ìë™ìœ¼ë¡œ Stage ë‚´ë¶€ì— Singerë¥¼ ëŒ€ì…í•´ì¤Œ.
+	//@Autowired
+	//@Qualifier("hiphopSinger")
+	//@Resource(name="hiphopSinger")
+	//@Inject
+	private Singer singer;// ë¬´ëŒ€ì— ì„œëŠ” ê°€ìˆ˜
 	
-	// ¹«´ë´Â °¡¼ö°¡ ÀÖ¾î¾ß ¼º¸³ÇÕ´Ï´Ù.
-	public Stage(Singer singer) {
-		this.singer = singer;// ¹«´ë¿¡ ¼³ °¡¼ö¸¦ ÀÔ·ÂÇØ¾ß »ı¼ºÀÚ ½ÇÇàÀÌ °¡´ÉÇÏ°Ô Ã¶
+	//Qualifierë¥¼ ì“¸ê±°ë¼ë©´ ì•„ë¬´ê²ƒë„ ì…ë ¥ë°›ì§€ ì•Šê³  ì•„ë¬´ì‹¤í–‰ë„ í•˜ì§€ ì•ŠëŠ” ìƒì„±ìë¥¼ ì¶”ê°€í•´ì•¼í•©ë‹ˆë‹¤.
+	public Stage() {}
+	
+	// ë¬´ëŒ€ëŠ” ê°€ìˆ˜ê°€ ìˆì–´ì•¼ ì„±ë¦½í•©ë‹ˆë‹¤.
+	//public Stage(Singer singer) {
+	//	this.singer = singer;// ë¬´ëŒ€ì— ì„¤ ê°€ìˆ˜ë¥¼ ì…ë ¥í•´ì•¼ ìƒì„±ì ì‹¤í–‰ì´ ê°€ëŠ¥í•˜ê²Œ ì² 
+	//}
+	
+	// setterë¥¼ ì´ìš©í•´ ì˜ì¡´ì„± ì£¼ì…ì„ í•´ ì¤„ ìˆ˜ë„ ìˆìŠµë‹ˆë‹¤.
+	public void setSinger(Singer singer) {
+		this.singer = singer; 
 	}
 
 	public void perform() {
-		System.out.print("¹«´ë¿¡¼­ ");
+		System.out.print("ë¬´ëŒ€ì—ì„œ ");
 		this.singer.sing();
 	}
 	
